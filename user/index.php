@@ -1,6 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-
 <?php
 require_once '../setting/konstanta.php';
 require_once '../setting/koneksi.php';
@@ -8,6 +5,12 @@ require_once '../setting/crud.php';
 require_once '../setting/label.php';
 require_once '../setting/helper.php';
 session_start();
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<?php
 
 if (isset($_SESSION['user'])) {
     extract(_dataGetId($mysqli, "tb_pegawai", "idpegawai='" . $_SESSION['user'] . "'"));
