@@ -1,4 +1,5 @@
  <?php
+  session_start();
   require_once '../setting/konstanta.php';
   require_once '../setting/koneksi.php';
   require_once '../setting/crud.php';
@@ -6,7 +7,7 @@
   require_once '../setting/helper.php';
   require_once '_partials/_link.php';
 
-  session_start();
+
   //Cek Debug
   $debug = true;
   if ($debug == true) :
