@@ -52,6 +52,7 @@ endif;
 
     <!-- Template Main CSS File -->
     <link href="assets/css/main.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../assets/icon.ico" />
 
     <!-- =======================================================
   * Template Name: Impact - v1.1.0

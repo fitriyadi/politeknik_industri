@@ -21,7 +21,7 @@ require_once 'setting/konstanta.php';
 	<!-- Layout styles -->
 	<link rel="stylesheet" href="assets/css/demo_1/style.css">
 	<!-- End layout styles -->
-	<link rel="shortcut icon" href="assets/images/favicon.png" />
+	<link rel="shortcut icon" href="assets/icon.ico" />
 </head>
 
 <body class="sidebar-dark">
