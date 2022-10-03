@@ -7,6 +7,12 @@
   require_once '_partials/_link.php';
 
   session_start();
+  ?>
+
+ <!DOCTYPE html>
+ <html lang="en">
+
+ <?php
   //Cek Debug
   $debug = true;
   if ($debug == true) :
@@ -17,9 +23,6 @@
 
   if (isset($_SESSION['admin'])) {
   ?>
-
-   <!DOCTYPE html>
-   <html lang="en">
 
    <head>
      <meta charset="UTF-8">
@@ -97,12 +100,10 @@
      <?php require_once '_partials/_js.php'; ?>
      <!-- end custom js for this page -->
    </body>
-
-   </html>
-
-   </script> -->
  <?php
   } else {
     echo "<script>window.location='../login.php';</script>";
   }
   ?>
+
+ </html>

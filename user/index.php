@@ -11,7 +11,6 @@ session_start();
 <html lang="en">
 
 <?php
-
 if (isset($_SESSION['user'])) {
     extract(_dataGetId($mysqli, "tb_pegawai", "idpegawai='" . $_SESSION['user'] . "'"));
 }
