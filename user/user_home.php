@@ -1,5 +1,6 @@
 <?php
-$sql = "SELECT * FROM tb_pengajuan where is_notif='1' and idpegawai='" . $_SESSION['user'] . "'";
+@$iduser = $_SESSION['user'];
+$sql = "SELECT * FROM tb_pengajuan where is_notif='1' and idpegawai='$iduser'";
 if (_cekData($mysqli, $sql) == true) :
     extract(_dataGetId($mysqli, "tb_pengajuan join tb_pegawai using(idpegawai)", "is_notif='1'"));
 else :
